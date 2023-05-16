@@ -53,7 +53,10 @@ final class ListViewModel {
 
 extension ListViewModel: ListViewModelProtocol {
     func media(_ index: Int) -> NewsMultimedia? {
-        media[index]
+        var media = news[index].newsMultimedia?.compactMap({ element in
+            element.format == "Large Thumbnail" ? element : nil
+        }).last
+        return media
     }
     
     var numberOfItems: Int {
