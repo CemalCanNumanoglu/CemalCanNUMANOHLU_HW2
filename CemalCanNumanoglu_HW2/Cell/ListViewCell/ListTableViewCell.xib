@@ -12,67 +12,86 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="209" id="KGk-i7-Jjw" customClass="ListTableViewCell" customModule="CemalCanNumanoglu_HW2" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="536" height="209"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="231" id="KGk-i7-Jjw" customClass="ListTableViewCell" customModule="CemalCanNumanoglu_HW2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="535" height="186"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="536" height="209"/>
+                <rect key="frame" x="0.0" y="0.0" width="535" height="186"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QtF-Au-72H">
-                        <rect key="frame" x="8" y="8" width="520" height="181.33333333333334"/>
+                        <rect key="frame" x="8" y="8" width="519" height="170"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hkf-4T-WMC">
-                                <rect key="frame" x="8" y="8" width="180" height="180"/>
+                                <rect key="frame" x="8" y="8" width="150" height="154"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="9ww-PJ-RNV"/>
-                                    <constraint firstAttribute="height" constant="180" id="N7f-dW-7S6"/>
+                                    <constraint firstAttribute="width" constant="150" id="9ww-PJ-RNV"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="300-6p-OAd">
-                                <rect key="frame" x="196" y="8" width="316" height="165.33333333333334"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eB8-9l-DYg">
+                                <rect key="frame" x="166" y="8" width="345" height="154"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwc-nk-nCg">
-                                        <rect key="frame" x="132.66666666666669" y="0.0" width="51" height="30"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RV2-LL-LGm">
-                                        <rect key="frame" x="0.0" y="42" width="316" height="91"/>
-                                        <string key="text">Ex. : Title 42 had enabled the swift removal of migrants. As it ended, the Biden administration warned of tough penalties for illegal crossings</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <color key="textColor" systemColor="systemGrayColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="165" translatesAutoresizingMaskIntoConstraints="NO" id="DAE-E5-JSL">
-                                        <rect key="frame" x="0.0" y="145" width="316" height="20.333333333333343"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="300-6p-OAd" userLabel="Title/Abstract Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="328" height="112"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFG-La-3Ph">
-                                                <rect key="frame" x="0.0" y="0.0" width="51.333333333333336" height="20.333333333333332"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="iwc-nk-nCg">
+                                                <rect key="frame" x="150.66666666666669" y="8.0000000000000036" width="27" height="60.333333333333343"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See More Details." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="elv-ww-u0d">
-                                                <rect key="frame" x="216.33333333333329" y="0.0" width="99.666666666666657" height="20.333333333333332"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RV2-LL-LGm">
+                                                <rect key="frame" x="0.0" y="72.333333333333329" width="328" height="39.666666666666671"/>
+                                                <string key="text">Ex. : Title 42 had enabled the swift removal of migrants. As it ended, the Biden administration warned of tough penalties for illegal crossings</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="textColor" systemColor="systemGrayColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="iwc-nk-nCg" firstAttribute="top" secondItem="300-6p-OAd" secondAttribute="top" constant="8" id="1Li-QV-qv1"/>
+                                            <constraint firstItem="RV2-LL-LGm" firstAttribute="top" secondItem="iwc-nk-nCg" secondAttribute="bottom" constant="4" id="f7H-Fm-8cS"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="0z9-WZ-XK0" userLabel="Author/Detail Stack View">
+                                        <rect key="frame" x="0.0" y="124" width="337" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N40-cF-dbL">
+                                                <rect key="frame" x="8" y="0.0" width="321" height="12"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See More Details" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQh-WM-E20">
+                                                <rect key="frame" x="8" y="19" width="321" height="11"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                                 <color key="textColor" name="AccentColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="NQh-WM-E20" secondAttribute="trailing" constant="8" id="914-9P-ljD"/>
+                                            <constraint firstItem="N40-cF-dbL" firstAttribute="leading" secondItem="0z9-WZ-XK0" secondAttribute="leading" constant="8" id="DLg-Xa-Dr6"/>
+                                            <constraint firstAttribute="trailing" secondItem="N40-cF-dbL" secondAttribute="trailing" constant="8" id="Jm9-Bl-IWn"/>
+                                            <constraint firstItem="NQh-WM-E20" firstAttribute="leading" secondItem="0z9-WZ-XK0" secondAttribute="leading" constant="8" id="yg6-Jl-Onm"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="0z9-WZ-XK0" firstAttribute="leading" secondItem="eB8-9l-DYg" secondAttribute="leading" constant="8" id="H6o-Xc-oKQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="0z9-WZ-XK0" secondAttribute="trailing" constant="8" id="olO-vu-D68"/>
+                                    <constraint firstItem="0z9-WZ-XK0" firstAttribute="top" secondItem="300-6p-OAd" secondAttribute="bottom" constant="12" id="pO9-ml-dFU"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="300-6p-OAd" firstAttribute="top" secondItem="QtF-Au-72H" secondAttribute="top" constant="8" id="2ZH-e5-75q"/>
                             <constraint firstItem="hkf-4T-WMC" firstAttribute="top" secondItem="QtF-Au-72H" secondAttribute="top" constant="8" id="II3-xS-ERs"/>
-                            <constraint firstItem="300-6p-OAd" firstAttribute="leading" secondItem="hkf-4T-WMC" secondAttribute="trailing" constant="8" id="Kf0-WZ-VzG"/>
-                            <constraint firstAttribute="trailing" secondItem="300-6p-OAd" secondAttribute="trailing" constant="8" id="VCx-xo-Lu6"/>
-                            <constraint firstAttribute="bottom" secondItem="300-6p-OAd" secondAttribute="bottom" constant="8" id="WuL-98-rmY"/>
+                            <constraint firstItem="eB8-9l-DYg" firstAttribute="top" secondItem="QtF-Au-72H" secondAttribute="top" constant="8" id="S9g-a6-YI4"/>
                             <constraint firstAttribute="bottom" secondItem="hkf-4T-WMC" secondAttribute="bottom" constant="8" id="fbF-d1-XDB"/>
+                            <constraint firstAttribute="trailing" secondItem="eB8-9l-DYg" secondAttribute="trailing" constant="8" id="mUq-GQ-Mbf"/>
+                            <constraint firstAttribute="bottom" secondItem="eB8-9l-DYg" secondAttribute="bottom" constant="8" id="nWc-tO-UY5"/>
+                            <constraint firstItem="eB8-9l-DYg" firstAttribute="leading" secondItem="hkf-4T-WMC" secondAttribute="trailing" constant="8" id="nct-26-OsU"/>
                             <constraint firstItem="hkf-4T-WMC" firstAttribute="leading" secondItem="QtF-Au-72H" secondAttribute="leading" constant="8" id="pT4-mr-Ptd"/>
                         </constraints>
                     </view>
@@ -86,12 +105,12 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="authorLabel" destination="GFG-La-3Ph" id="BXx-3h-dcc"/>
+                <outlet property="authorLabel" destination="N40-cF-dbL" id="C8i-je-NhX"/>
                 <outlet property="newsImageView" destination="hkf-4T-WMC" id="LZh-fc-uHt"/>
                 <outlet property="newsTitleLabel" destination="iwc-nk-nCg" id="JpY-4l-7hM"/>
                 <outlet property="statementLabel" destination="RV2-LL-LGm" id="0Ev-Eg-v9J"/>
             </connections>
-            <point key="canvasLocation" x="245.80152671755724" y="38.380281690140848"/>
+            <point key="canvasLocation" x="348.85496183206106" y="52.816901408450704"/>
         </tableViewCell>
     </objects>
     <resources>
