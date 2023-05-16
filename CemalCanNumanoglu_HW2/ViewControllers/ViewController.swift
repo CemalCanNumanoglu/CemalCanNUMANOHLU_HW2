@@ -31,7 +31,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: UITableViewDataSource {
+extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         listViewModel.numberOfItems
     }
@@ -44,7 +44,21 @@ extension ViewController: UITableViewDataSource {
         if let media = self.listViewModel.media(indexPath.row) {
             cell.configureMedia(media: media)
         }
+        
+        cell.layer.cornerRadius = 30
+        cell.layer.borderColor = UIColor.black.cgColor
+        cell.layer.borderWidth = 1
+        cell.layoutMargins = UIEdgeInsets(top: .zero, left: 30, bottom: 10, right: 30)
         return cell
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //TODO: Details view' e data aktar
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        250
     }
     
 }
