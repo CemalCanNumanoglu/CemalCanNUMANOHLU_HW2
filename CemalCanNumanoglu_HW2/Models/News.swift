@@ -46,6 +46,7 @@ public struct NewsMultimedia: Decodable {
     public let url: String?
     public let height: Int?
     public let width: Int?
+    public let format: String?
 }
 
 
