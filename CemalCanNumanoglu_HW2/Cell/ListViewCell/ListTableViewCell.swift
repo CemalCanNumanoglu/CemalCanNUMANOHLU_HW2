@@ -10,33 +10,30 @@ import SDWebImage
 
 final class ListTableViewCell: UITableViewCell {
 
+//MARK: - IBOUTLETS
+ 
     
-    @IBOutlet var newsImageView: UIImageView!
-    @IBOutlet var newsTitleLabel: UILabel!
-    @IBOutlet var statementLabel: UILabel!
-    @IBOutlet var authorLabel: UILabel!
+    @IBOutlet weak var newsTitleLabel: UILabel!
+    
+    @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var newsImageView: UIImageView!
     
     override class func awakeFromNib() {
         super.awakeFromNib()
     }
-    
+//MARK: - FUNCS
     func configure(news: News) {
         //prepareImage(with: news.url)
         newsTitleLabel.text = news.title
-        statementLabel.text = news.abstract
         authorLabel.text = news.byline
     }
     
-    func configureMedia(media: NewsMultimedia){
-        prepareImage(with: media.url)
-    }
+    func configureMedia(media: NewsMultimedia){ prepareImage(with: media.url) }
     
     private func prepareImage(with urlString: String?) {
         let fullPath = urlString ?? ""
         
-        if let url = URL(string: fullPath) {
-            newsImageView.sd_setImage(with: url)
-        }
+        if let url = URL(string: fullPath) { newsImageView.sd_setImage(with: url) }
     }
     
 }
