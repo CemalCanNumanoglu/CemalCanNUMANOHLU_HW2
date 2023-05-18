@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let windowScene = UIWindowScene(session: session, connectionOptions: connectionOptions)
         self.window = UIWindow(windowScene: windowScene)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        guard let rootVC = storyboard.instantiateViewController(withIdentifier: "ViewController") as? ViewController else { return }
+        guard let rootVC = storyboard.instantiateViewController(withIdentifier: "ListViewController") as? ListViewController else { return }
         
         let viewModel = ListViewModel(service: NYTopStoriesService())
         rootVC.listViewModel = viewModel
