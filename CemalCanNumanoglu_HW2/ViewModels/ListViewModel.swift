@@ -13,7 +13,8 @@ protocol ListViewModelProtocol {
     
     func fetchData()
     func news(_ index: Int) -> News?
-    func media(_ index: Int) -> NewsMultimedia?
+    func smallmedia(_ index: Int) -> NewsMultimedia?
+    func largemedia(_ index: Int) -> NewsMultimedia?
 }
 
 protocol ListViewModelDelegate: AnyObject {
@@ -52,24 +53,25 @@ final class ListViewModel {
 }
 
 extension ListViewModel: ListViewModelProtocol {
-    func media(_ index: Int) -> NewsMultimedia? {
-        var media = news[index].newsMultimedia?.compactMap({ element in
+    func smallmedia(_ index: Int) -> NewsMultimedia? {
+        let media = news[index].newsMultimedia?.compactMap({ element in
             element.format == "Large Thumbnail" ? element : nil
-        }).last
+        }).first
         return media
     }
     
-    var numberOfItems: Int {
-        news.count
+    func largemedia(_ index: Int) -> NewsMultimedia? {
+        let media = news[index].newsMultimedia?.compactMap({ element in
+            element.format == "Super Jumbo" ? element : nil
+        }).first
+        return media
     }
     
-    func fetchData() {
-        fetchNews()
-    }
+    var numberOfItems: Int { news.count }
     
-    func news(_ index: Int) -> News? {
-        news[index]
-    }
+    func fetchData() { fetchNews() }
+    
+    func news(_ index: Int) -> News? { news[index] }
     
     
 }
