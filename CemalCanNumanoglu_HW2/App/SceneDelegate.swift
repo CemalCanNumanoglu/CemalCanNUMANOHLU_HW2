@@ -21,12 +21,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window = UIWindow(windowScene: windowScene)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         guard let rootVC = storyboard.instantiateViewController(withIdentifier: "ListViewController") as? ListViewController else { return }
-        
+        let navigationController = UINavigationController(rootViewController: rootVC)
         let viewModel = ListViewModel(service: NYTopStoriesService())
         rootVC.listViewModel = viewModel
+        navigationController.navigationBar.prefersLargeTitles = true
         
-        self.window?.rootViewController = rootVC
+        self.window!.rootViewController = navigationController
         self.window?.makeKeyAndVisible()
+        
     }
 
     @available(iOS 13.0, *)
