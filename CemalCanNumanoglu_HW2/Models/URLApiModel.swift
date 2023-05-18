@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+//TODO: VAKİT KALIRSA URLYİ PARÇALAYIP BURDAN İSTEK OLUŞTUR.
 struct UrlApiModel {
      let scheme: String?
      let host: String?
