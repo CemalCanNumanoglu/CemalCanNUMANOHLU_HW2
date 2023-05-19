@@ -16,6 +16,7 @@ final class DetailsViewController: UIViewController {
     @IBOutlet weak var newsImage: UIImageView!
     @IBOutlet weak var abstract: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var backLabelBtn: UILabel!
     
     
     var detailsViewModel: DetailsViewModelProtocol!
@@ -23,13 +24,19 @@ final class DetailsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let scrollView = UIScrollView()
-        view.addSubview(scrollView)
-        
-        
         updateView()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(backBtn))
+        backLabelBtn.addGestureRecognizer(tap)
         
-        
+    }
+    
+    
+    @objc private func backBtn() {
+//        let mainView = storyboard?.instantiateViewController(withIdentifier: "ListViewController") as! ListViewController
+//
+//        self.present(mainView, animated: true)
+        self.view.window!.rootViewController?.dismiss(animated: false, completion: nil)
+        print("sa")
     }
     
     private func updateView() {
@@ -64,6 +71,6 @@ final class DetailsViewController: UIViewController {
         modalPresentationStyle = .fullScreen
     }
     
-    
+
     
 }
