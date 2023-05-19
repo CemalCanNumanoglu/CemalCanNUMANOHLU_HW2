@@ -6,10 +6,20 @@ After reading the news here, by clicking on the "see more" button, the user can 
 The video below shows how the application operates on an IPhone SE(3rd Generation)
 
 
-https://github.com/CemalCanNumanoglu/CemalCanNUMANOHLU_HW2/assets/117599373/153cd229-697d-45e7-97f7-da44dd8b7320
+
+https://github.com/CemalCanNumanoglu/CemalCanNUMANOHLU_HW2/assets/117599373/37057075-8ed0-45de-a4b7-009dab8d8e15
+
+
+
 
 
 
 The video below shows how the application operates on an IPhone 14 Pro
-https://github.com/CemalCanNumanoglu/CemalCanNUMANOHLU_HW2/assets/117599373/57bbee9d-28f3-422f-a9b5-7d4e59239366
+
+
+https://github.com/CemalCanNumanoglu/CemalCanNUMANOHLU_HW2/assets/117599373/0bae1f43-bb97-44a0-85a8-81869c15cdc4
+
+
+
+
 
